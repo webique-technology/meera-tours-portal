@@ -1,0 +1,187 @@
+@media (max-width: 1100px) {
+  .grid--4,
+  .why-grid,
+  .stats-row,
+  .hotel-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .booking-widget__grid,
+  .search-strip__grid,
+  .search-strip--bus .search-strip__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .site-footer__grid,
+  .result-layout,
+  .two-col,
+  .holiday-layout,
+  .pkg-layout,
+  .stay-card__body,
+  .itin-row,
+  .hotel-board {
+    grid-template-columns: 1fr;
+  }
+
+  .__hero {
+    grid-template-columns: 1fr;
+  }
+
+  // .photo-mosaic__hero img {
+  //   height: 180px;
+  // }
+
+  .photo-mosaic__row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .flight-row,
+  .bus-row,
+  .bus-ticket__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .holiday-gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 160px;
+  }
+
+  .holiday-gallery > img:nth-child(1),
+  .holiday-gallery > img:nth-child(2) {
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 860px) {
+  .filter-open {
+    display: inline-flex;
+  }
+
+  .filter-sidebar {
+    position: fixed;
+    inset: auto 0 0;
+    z-index: 50;
+    max-height: 86vh;
+    overflow: auto;
+    border-radius: 20px 20px 0 0;
+    transform: translateY(110%);
+    transition: transform 0.25s var(--ease);
+  }
+
+  .filter-sidebar.is-open {
+    transform: translateY(0);
+  }
+
+  .filter-sidebar__close,
+  .filter-backdrop {
+    display: block;
+  }
+
+  .filter-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 45;
+    border: 0;
+    background: rgba(7, 21, 33, 0.45);
+  }
+
+  .hotel-result {
+    grid-template-columns: 1fr;
+  }
+
+  .hotel-result__price {
+    align-items: flex-start;
+  }
+
+  .nav,
+  .header-cta__phone {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: grid;
+    place-items: center;
+  }
+
+  .mobile-nav.is-open {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0.8rem 1rem 1.1rem;
+    background: rgba(251, 248, 244, 0.96);
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .grid--2,
+  .grid--3,
+  .booking-widget__grid,
+  .gallery,
+  .hotel-grid,
+  .search-strip__grid,
+  .search-strip--bus .search-strip__grid,
+  .holiday-gallery,
+  .holiday-gallery.is-open,
+  .bus-ticket__grid,
+  .bus-ticket__times,
+
+  .pkg-layout,
+  .stay-card__body,
+  .itin-row {
+    grid-template-columns: 1fr;
+  }
+
+  .search-strip {
+    position: static;
+  }
+
+  .holiday-book,
+  .book-card {
+    position: static;
+  }
+
+  .header-help,
+  .header-user {
+    display: none;
+  }
+
+  .section__head,
+  .promo-band,
+  .site-footer__base {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero {
+    min-height: 680px;
+    align-items: center;
+  }
+
+  .page-hero {
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .stats-row,
+  .why-grid,
+  .grid--4 {
+    grid-template-columns: 1fr;
+  }
+
+  .flight-row,
+  .bus-row {
+    grid-template-columns: 1fr;
+  }
+
+  // .container {
+  //   width: min(var(--container), calc(100% - 1.2rem));
+  // }
+}
+
+@media (max-width: 450px) {
+
+  .photo-mosaic__row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,105 @@
+.page-hero {
+  padding: 3.4rem 0 2.6rem;
+  background:
+    radial-gradient(700px 240px at 10% 0%, rgba(36, 116, 168, 0.16), transparent 55%),
+    linear-gradient(180deg, #fff, transparent);
+}
+
+.page-hero h1 {
+  font-size: clamp(2rem, 4vw, 3.3rem);
+}
+
+.result-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 1.1rem;
+}
+
+.filter-card,
+.detail-panel,
+.sticky-quote {
+  background: white;
+  border-radius: 12px;
+  box-shadow: none;
+  border: 1px solid #ececec;
+  padding: 1rem 1rem 1.1rem;
+}
+
+.flight-row,
+.bus-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1.6fr 0.9fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.1rem 1.2rem;
+  background: white;
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+.time-block strong {
+  display: block;
+  font-size: 1.25rem;
+}
+
+.route-line {
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-navy-700), var(--color-coral));
+  position: relative;
+  margin: 0.45rem 0;
+}
+
+.detail-hero {
+  position: relative;
+  min-height: 360px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: var(--shadow-float);
+}
+
+.detail-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 360px;
+}
+
+.detail-hero__caption {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 1.5rem;
+  color: white;
+  background: linear-gradient(transparent, rgba(7, 21, 33, 0.78));
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.7rem;
+}
+
+.gallery img {
+  height: 140px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.itinerary {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.itinerary__item {
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
+  background: white;
+  box-shadow: var(--shadow-soft);
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1.5fr 0.9fr;
+  gap: 1.4rem;
+  align-items: start;
+}

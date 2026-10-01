@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /backend/api/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^flights/([^/]+)/?$ flights.php?id=$1 [QSA,L]
+RewriteRule ^hotels/([^/]+)/?$ hotels.php?slug=$1 [QSA,L]
+RewriteRule ^packages/([^/]+)/?$ packages.php?slug=$1 [QSA,L]
+RewriteRule ^buses/([^/]+)/?$ buses.php?id=$1 [QSA,L]
+RewriteRule ^visa/([^/]+)/?$ visa.php?slug=$1 [QSA,L]

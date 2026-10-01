@@ -1,0 +1,64 @@
+.booking-widget {
+  background: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 18px;
+  padding: 0.85rem 1rem 1.05rem;
+  box-shadow: var(--shadow-float);
+}
+
+.booking-widget__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.booking-widget__tab {
+  border: 0;
+  background: var(--color-sky-100);
+  color: var(--color-navy-800);
+  border-radius: 14px;
+  padding: 0.65rem 0.95rem;
+  font-weight: 650;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  min-width: 92px;
+}
+
+.booking-widget__tab span {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.booking-widget__tab small {
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.booking-widget__tab.is-active {
+  color: #1a1a1a;
+  background: var(--color-yellow);
+}
+
+.booking-widget__grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.7rem;
+  align-items: end;
+}
+
+.trip-switch {
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 0.9rem;
+  font-size: 0.86rem;
+}
+
+.trip-switch label {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}

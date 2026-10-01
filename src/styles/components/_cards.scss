@@ -1,0 +1,131 @@
+.card-3d {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transform: translateZ(0);
+  transition: transform 0.28s var(--ease), box-shadow 0.28s var(--ease);
+}
+
+.card-3d:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-float);
+}
+
+.card-3d__media {
+  position: relative !important;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.card-3d__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s var(--ease);
+}
+
+.card-3d:hover .card-3d__media img {
+  transform: scale(1.05);
+}
+
+.card-3d__body {
+  padding: 1.15rem 1.2rem 1.3rem;
+}
+
+.card-3d__meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  color: var(--color-muted);
+  font-size: 0.82rem;
+}
+
+.price {
+  font-weight: 750;
+  color: var(--color-navy-800);
+}
+
+.price small {
+  display: block;
+  font-weight: 500;
+  color: var(--color-muted);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-sky-100);
+  color: var(--color-navy-800);
+  font-size: 0.74rem;
+  font-weight: 650;
+}
+
+.offer-card {
+  padding: 1.3rem;
+  border-radius: var(--radius-lg);
+  color: white;
+  min-height: 170px;
+  box-shadow: var(--shadow-card);
+  background: linear-gradient(145deg, var(--color-navy-800), var(--color-navy-950));
+}
+
+.offer-card--coral {
+  background: linear-gradient(145deg, #f07a45, #c84512);
+}
+
+.offer-card--gold {
+  color: var(--color-navy-950);
+  background: linear-gradient(145deg, #f6d9a0, #e9b14a);
+}
+
+.offer-card code {
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 0.8rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.service-tile {
+  padding: 1.3rem;
+  border-radius: var(--radius-lg);
+  background: white;
+  box-shadow: var(--shadow-card);
+  min-height: 170px;
+}
+
+.service-tile__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.9rem;
+  background: var(--color-sky-100);
+  color: var(--color-navy-800);
+  font-size: 1.3rem;
+}
+
+.review-card {
+  padding: 1.4rem;
+  border-radius: var(--radius-lg);
+  background: white;
+  // box-shadow: var(--shadow-card);
+  min-height: 220px;
+}
+
+.review-card__stars {
+  color: var(--color-gold);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.6rem;
+}
+
+.absolute-badge {
+  max-width: 278px;
+  width: 100%;
+}

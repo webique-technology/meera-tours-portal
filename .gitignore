@@ -1,0 +1,42 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# next
+/.next/
+/out/
+
+# production
+/build
+
+# env
+.env
+.env.local
+.env.*.local
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ide
+.idea
+.vscode
+*.swp
+
+# os
+.DS_Store
+Thumbs.db
+
+# php
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/storage/*.json
+
+# local enquiry store
+src/data/storage/*.json
+!src/data/storage/.gitkeep
+
+# temp downloads
+.tmp-pkg

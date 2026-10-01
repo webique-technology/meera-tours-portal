@@ -1,0 +1,115 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  height: 64px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.site-header__inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-16);
+}
+
+.brand-logo{
+  width: 110px;
+  height: auto;
+  padding: 4px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.brand__mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #1a1a1a;
+  font-weight: 800;
+  background: var(--color-yellow);
+}
+
+.brand__name {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  text-transform: lowercase;
+}
+
+.brand__tag {
+  display: block;
+  font-size: 0.62rem;
+  color: var(--color-muted);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.nav__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.7rem;
+  border-radius: 8px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.nav__icon {
+  font-size: 0.95rem;
+}
+
+.nav__link:hover,
+.nav__link.is-active {
+  color: var(--color-navy-800);
+  background: #fff8e1;
+}
+
+.header-cta {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.header-help,
+.header-user {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.header-user {
+  border: 1px solid #e6d38a;
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+}
+
+.nav-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 12px;
+  background: #f4f4f4;
+}
+
+.mobile-nav {
+  display: none;
+}
