@@ -340,9 +340,8 @@ function HotelResults() {
                 ) : (
                   <div className="row g-4">
                     {paged.items.map((item) => (
-                      <div className="col-12 col-sm-6 col-lg-4">
+                      <div className="col-12 col-sm-6 col-lg-4" key={item.id}>
                         <HotelResultCard
-                          key={item.id}
                           item={item}
                           checkIn={checkIn}
                           checkOut={checkOut}
